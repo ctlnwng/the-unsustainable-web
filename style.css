@@ -16,7 +16,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 100px 50px;
   font-size: 24px;
+  background-color: var(--bg-color);
   color: var(--text-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 ul {
@@ -36,12 +38,23 @@ a:hover {
 }
 
 section:not(:last-child) {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
-.theme-toggle {
-  position: absolute;
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* Light/dark mode toggle */
+
+.theme-toggle__label {
+  position: fixed;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* Table of Contents */
