@@ -9,10 +9,14 @@
   <body>
     <div class="main">
       <!-- <p class="theme-toggle">Turn off the lights</p> -->
+
+      <!-- Table of Contents -->
       <div class="toc">
         <h1 class="title">The Unsustainable Web</h1>
         <ul>
-          <li class="toc__item"><a href="#introduction">Introduction</a></li>
+          <li class="toc__item">
+            <a href="#introduction" class="selected">Introduction</a>
+          </li>
           <li class="toc__item"><a href="#data-centers">Data Centers</a></li>
           <li class="toc__item">
             <a href="#technology-companies">Technology Companies</a>
@@ -23,13 +27,23 @@
           <li class="toc__item"><a href="#conclusion">Conclusion</a></li>
         </ul>
       </div>
+
+      <!-- Essay -->
       <div class="essay-content">
         <section id="introduction">
           <p class="introduction__hook">
             This web page weighs X MB.
           </p>
 
-          <p>The average web page weighs <a href="google.com">2.08 MB</a>.</p>
+          <p>
+            The average web page weighs
+            <a
+              href="https://httparchive.org/reports/page-weight#bytesTotal"
+              target="_blank"
+              rel="noopener"
+              >2.08 MB</a
+            >.
+          </p>
 
           <p>
             From your Instagram photos to your Netflix queue, every byte of data
@@ -40,15 +54,22 @@
           </p>
 
           <p>
-            In a <a href="google.com">2015 report</a> by researchers Anders
-            Andrae and Tomas Edler, information and communication technology
-            (ICT) was projected to make up 11% of global electricity consumption
-            in 2020, for a total electricity demand of approximately 8,265 TWh
-            (terawatt hours). As of 2018, this is more than the electricity
-            consumption of every country in the world apart from China and the
-            United States. It is estimated that the ICT industry accounts for
-            roughly 2% of global greenhouse gas emissions, matching the carbon
-            footprint of the entire air travel industry.
+            In a
+            <a
+              href="https://www.mdpi.com/2078-1547/6/1/117"
+              target="_blank"
+              rel="noopener"
+              >2015 report</a
+            >
+            by researchers Anders Andrae and Tomas Edler, information and
+            communication technology (ICT) was projected to make up 11% of
+            global electricity consumption in 2020, for a total electricity
+            demand of approximately 8,265 TWh (terawatt hours). As of 2018, this
+            is more than the electricity consumption of every country in the
+            world apart from China and the United States. It is estimated that
+            the ICT industry accounts for roughly 2% of global greenhouse gas
+            emissions, matching the carbon footprint of the entire air travel
+            industry.
           </p>
 
           <p>
@@ -57,12 +78,92 @@
             web: data centers, technology companies, and web developers.
           </p>
         </section>
+        <section id="data-centers">
+          <h2 class="heading">Data Centers</h2>
 
-        <h2 id="data-centers">Data Centers</h2>
-        <h2 id="technology-companies">Technology Companies</h2>
-        <h2 id="web-developers">Web Developers</h2>
-        <h2 id="conclusion">Conclusion</h2>
+          <p>
+            Behind the interfaces we see in our day-to-day Internet browsing
+            routine are hundreds of data centers that store and manage data for
+            every online service or application. In 2018, these digital
+            factories were estimated to consume approximately 205 TWh of energy,
+            which is roughly 1% of global energy demand.
+          </p>
+
+          <p>
+            The energy efficiency of current data center infrastructure
+            certainly has room for improvement. Nicknamed “Data Center Alley”,
+            Loudoun County in Northern Virginia boasts the largest cluster of
+            data centers in the world, handling 70% of the world’s internet
+            traffic. Despite this major energy demand, 85% of Virginia’s energy
+            production came from non-renewable sources according to 2017
+            statistics reported by the United States Energy Information
+            Administration. With Internet traffic projected to grow 24%
+            annually, it is crucial that data centers are designed to be as
+            energy efficient as possible, especially as they expand to meet
+            demand.
+          </p>
+        </section>
+        <section id="technology-companies">
+          <h2 class="heading">Technology Companies</h2>
+          <p>
+            Since 2010, Greenpeace, a non-governmental environmental
+            organization, has been urging major technology companies to commit
+            to some form of green energy initiative, such as switching to 100%
+            renewably powered data centers or offsetting their company’s carbon
+            dioxide emissions in general. According to their 2017 Clicking Clean
+            report, dominant tech companies such as Facebook, Apple, and Google
+            were among the first to make long-term clean energy commitments back
+            in 2011-2012, catalyzing the prioritization of energy efficiency by
+            more and more Internet companies.
+          </p>
+          <p>
+            In fact, many companies have honored their commitments by building
+            data centers in geographic locations that are have greater supplies
+            of renewable energy such as Finland and Denmark. Both Apple and
+            Google boast data centers that are powered by 100% renewable energy,
+            with Apple reporting to have prevented the emission of 2.1 million
+            metric tons of carbon dioxide since 2011.
+          </p>
+          <p>
+            Yet, there are still several companies that demonstrate a lack of
+            transparency regarding the sustainability of their operations.
+            Greenpeace specifically targeted Amazon Web Services (AWS), the
+            largest cloud computing platform in the world, as “completely
+            non-transparent about the energy footprint of its massive
+            operations,” despite their commitment to 100% renewable energy in
+            2014.
+          </p>
+        </section>
+        <section id="web-developers">
+          <h2 class="heading">Web Developers</h2>
+          <p>
+            Where does this leave web developers, the ones who are building the
+            digital services that shape the web? Website Carbon Calculator, a
+            website by London-based agency Wholegrain Digital, calculates the
+            amount of CO2 produced every time someone visits a given URL. Their
+            calculation involves the amount of data transferred, the energy
+            consumption of serving that data, the carbon production of the
+            site’s host, and finally, the website’s traffic. They conclude that
+            the average website produces 4.61 grams of CO2 per page view.
+          </p>
+        </section>
+        <section id="conclusion">
+          <h2 class="heading">Conclusion</h2>
+          <p>
+            It is important to acknowledge that there are several components
+            that make up the infrastructure of the Internet (data centers, wired
+            and wireless networks, consumer devices), which makes quantifying
+            its carbon footprint a difficult task. However, as the Internet
+            expands to support more data, users, and applications, its energy
+            demand is nontrivial. Data centers, technology companies, along with
+            web developers all play a role in defining our digital future and
+            ultimately have a degree of responsibility when it comes to
+            mitigating the climate consequences of the rapidly growing web.
+          </p>
+        </section>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
