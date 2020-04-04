@@ -8,10 +8,16 @@
   </head>
   <body>
     <div class="main">
-      <input type="checkbox" id="theme-toggle" class="visually-hidden" />
-      <label class="theme-toggle__label" for="theme-toggle">
-        Turn off the lights
-      </label>
+      <div class="theme-toggle">
+        <input
+          type="checkbox"
+          id="theme-toggle__checkbox"
+          class="visually-hidden"
+        />
+        <label class="theme-toggle__label" for="theme-toggle__checkbox">
+          Turn off the lights
+        </label>
+      </div>
 
       <!-- Table of Contents -->
       <div class="toc">
@@ -158,6 +164,43 @@
             and scripts add significant bloat to websites and in turn, use
             nonessential bandwidth and energy to deliver to users.
           </p>
+
+          <p>
+            For example, this website attempts to conserve energy in the
+            following ways:
+          </p>
+
+          <ul class="web-developers__list">
+            <li class="web-developers__list-item">
+              <strong class="web-developers__li-heading"
+                >Content is type set in a system font.</strong
+              >
+              As of March 2020, the average web page makes five font requests
+              and loads 127.9 KB in custom font files. Using fonts that are
+              already pre-installed on a user’s operating system can bring the
+              number of font requests down to zero. This site uses Helvetica, a
+              font supported by most operating systems.
+            </li>
+            <li class="web-developers__list-item">
+              <strong class="web-developers__li-heading"
+                >Images are compressed and used in moderation.</strong
+              >
+              Images are the primary culprit of page bloat and have been
+              recorded to take up 1.03 MB/page – nearly half of the average web
+              page’s weight. This website has [number of images] images, all
+              compressed for a total of [total size of images] KB.
+            </li>
+            <li class="web-developers__list-item">
+              <strong class="web-developers__li-heading"
+                >Animations are implemented with CSS.</strong
+              >
+              Interactive features on a website are typically implemented in
+              JavaScript. However, running less JavaScript improves the energy
+              efficiency of a website as less CPU processing is required. This
+              site uses browser-optimized CSS animations and transitions in
+              favor of programming animations JavaScript.
+            </li>
+          </ul>
 
           <p>
             Web developers can also choose to prioritize optimizing their

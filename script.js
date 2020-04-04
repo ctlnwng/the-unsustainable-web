@@ -1,5 +1,5 @@
 // Toggle light/dark mode
-const toggle = document.querySelector('#theme-toggle');
+const toggle = document.querySelector('#theme-toggle__checkbox');
 const toggleLabel = document.querySelector('.theme-toggle__label');
 
 toggle.addEventListener('change', (e) => {
@@ -16,7 +16,7 @@ toggle.addEventListener('change', (e) => {
 const options = {
   root: null,
   rootMargin: '0px',
-  threshold: 1.0
+  threshold: 0.5
 }
 
 const tocLinks = document.querySelectorAll('.toc__item a');
