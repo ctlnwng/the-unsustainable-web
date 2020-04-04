@@ -60,7 +60,7 @@ section:not(:last-child) {
 }
 
 .theme-toggle__label {
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -68,7 +68,7 @@ section:not(:last-child) {
 
 .title {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--c-purple);
   margin-bottom: 50px;
 }
@@ -88,7 +88,7 @@ section:not(:last-child) {
 
 .toc__item {
   padding: 5px 0;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--c-grey);
 }
 
@@ -142,6 +142,5 @@ section:not(:last-child) {
 }
 
 .web-developers__li-heading {
-  font-weight: 500;
   border-bottom: 2px var(--c-purple) solid;
 }

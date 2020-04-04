@@ -16,7 +16,7 @@ toggle.addEventListener('change', (e) => {
 const options = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.5
+  threshold: 0.7
 }
 
 const tocLinks = document.querySelectorAll('.toc__item a');
