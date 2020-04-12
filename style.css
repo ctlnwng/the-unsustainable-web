@@ -111,12 +111,13 @@ section:not(:last-child) {
 
 .essay-content a {
   position: relative;
+  display: inline-block;
 }
 
 .essay-content a::before {
   content: "";
   position: absolute;
-  top: calc(-50%);
+  top: calc(-40%);
   left: calc(50% - 30px);
   width: 60px;
   height: 60px;
