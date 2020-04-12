@@ -13,18 +13,12 @@ toggle.addEventListener('change', (e) => {
 })
 
 // Table of Contents
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.7
-}
-
 const tocLinks = document.querySelectorAll('.toc__item a');
 let selected = document.querySelector('.selected');
 
 let callback = (entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
+    if (entry.intersectionRatio > 0) {
       const sectionId = entry.target.id;
 
       for (let i = 0; i < tocLinks.length; i++) {
@@ -40,7 +34,7 @@ let callback = (entries) => {
   })
 }
 
-const observer = new IntersectionObserver(callback, options);
+const observer = new IntersectionObserver(callback);
 
 const sections = document.querySelectorAll('section');
 sections.forEach(section => observer.observe(section));
