@@ -144,3 +144,16 @@ section:not(:last-child) {
 .web-developers__li-heading {
   border-bottom: 2px var(--c-purple) solid;
 }
+
+.about__heading {
+  font-weight: 400;
+}
+
+.about__heading::before {
+  content: "";
+  display: block;
+  margin: 0 auto 75px auto;
+  width: 200px;
+  height: 2px;
+  background-color: var(--text-color);
+}
