@@ -66,7 +66,7 @@ section:not(:last-child) {
 
 /* Table of Contents */
 
-.title {
+.title a {
   font-weight: 400;
   font-size: 18px;
   color: var(--c-purple);
