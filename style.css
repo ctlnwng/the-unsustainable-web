@@ -130,6 +130,11 @@ section:not(:last-child) {
   transition: transform 0.3s ease;
 }
 
+.essay__fig {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .essay__img {
   width: 100%;
 }
