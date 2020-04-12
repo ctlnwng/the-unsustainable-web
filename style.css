@@ -14,8 +14,8 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 100px 50px;
-  font-size: 24px;
+  margin: 100px 30px;
+  font-size: 18px;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -56,7 +56,7 @@ section:not(:last-child) {
 /* Light/dark mode toggle */
 
 .theme-toggle {
-  position: fixed;
+  position: relative;
 }
 
 .theme-toggle__label {
@@ -68,16 +68,14 @@ section:not(:last-child) {
 
 .title a {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--c-purple);
   margin-bottom: 50px;
 }
 
 .toc {
-  position: fixed;
-  top: 50vh;
-  transform: translateY(-50%);
-  width: 30%;
+  position: relative;
+  width: 100%;
 }
 
 .toc ul {
@@ -88,7 +86,7 @@ section:not(:last-child) {
 
 .toc__item {
   padding: 5px 0;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--c-grey);
 }
 
@@ -99,9 +97,8 @@ section:not(:last-child) {
 /* Essay Content */
 
 .essay-content {
-  width: 60%;
+  width: 100%;
   max-width: 850px;
-  margin-left: 35%;
   line-height: 1.4;
 }
 
@@ -138,7 +135,7 @@ section:not(:last-child) {
 }
 
 .essay__img-caption {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .essay__img-caption a::before {
@@ -147,7 +144,7 @@ section:not(:last-child) {
 }
 
 .introduction__hook {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 500;
 }
 
@@ -170,4 +167,45 @@ section:not(:last-child) {
   width: 200px;
   height: 2px;
   background-color: var(--text-color);
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+  body {
+    margin: 100px 50px;
+    font-size: 24px;
+  }
+
+  .theme-toggle {
+    position: fixed;
+  }
+
+  .title a {
+    font-size: 18px;
+  }
+
+  .toc {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: 30%;
+  }
+
+  .toc__item {
+    font-size: 18px;
+  }
+
+  .essay-content {
+    width: 60%;
+    margin-left: 35%;
+  }
+
+  .essay__img-caption {
+    font-size: 18px;
+  }
+
+  .introduction__hook {
+    font-size: 48px;
+  }
 }
