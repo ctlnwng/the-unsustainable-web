@@ -132,6 +132,19 @@ section:not(:last-child) {
   transition: transform 0.3s ease;
 }
 
+.essay__img {
+  width: 100%;
+}
+
+.essay__img-caption {
+  font-size: 18px;
+}
+
+.essay__img-caption a::before {
+  width: 0;
+  height: 0;
+}
+
 .introduction__hook {
   font-size: 48px;
   font-weight: 500;
