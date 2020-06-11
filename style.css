@@ -12,6 +12,10 @@
   --bg-color: #202020;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 100px 30px;
